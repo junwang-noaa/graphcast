@@ -40,4 +40,4 @@ The model output fields are:
 
 The 10-day forecast results for the current cycle found in the following directories:
 
-  MLGFS/v1.0/gfs.yyyymmdd/hh
+  mlgfs/v1.0/mlgfs.yyyymmdd/hh

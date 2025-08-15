@@ -1,1 +1,1 @@
-## GraphCast Global Forecast System (GraphCastGFS)
+## Machine Learning Global Forecast System (MLGFS)

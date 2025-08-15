@@ -2,7 +2,7 @@
 Product
 ######################
 
-The GraphCastGFS model runs 4 times a day at 00Z, 06Z, 12Z, and 18Z cycles. The horizontal resolution is on 0.25 degree lat-lon grid.
+The MLGFS model runs 4 times a day at 00Z, 06Z, 12Z, and 18Z cycles. The horizontal resolution is on 0.25 degree lat-lon grid.
 The vertical resolutions are on both 13 and 37 pressure levels.
 
 * The 13 pressure levels include:
@@ -37,14 +37,7 @@ The model output fields are:
 
   * 6-hourly total precipitation
 
-The near real-time forecast outputs along with inputs are available on `AWS <https://noaa-nws-graphcastgfs-pds.s3.amazonaws.com/index.html>`_. 
 
-For each cycle, the dataset contains input files to feed into GraphCast found in the directory:
+The 10-day forecast results for the current cycle found in the following directories:
 
-  graphcastgfs.yyyymmdd/hh/input 
-
-and 10-day forecast results for the current cycle found in the following directories:
-
-  graphcastgfs.yyyymmdd/hh/forecasts_13_levels
-
-  graphcastgfs.yyyymmdd/hh/forecasts_37_levels
+  MLGFS/v1.0/gfs.yyyymmdd/hh

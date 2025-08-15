@@ -105,7 +105,7 @@ class Netcdf2Grib:
         for date in datevectors:
             print(f"Processing for time {date.strftime('%Y-%m-%d %H:00:00')}")
             hrs = int((date - forecast_starttime).total_seconds() // 3600)
-            outfile = os.path.join(outdir, f'graphcastgfs.t{cycle:02d}z.pgrb2.0p25.f{hrs:03d}')
+            outfile = os.path.join(outdir, f'mlgfs.t{cycle:02d}z.pgrb2.0p25.f{hrs:03d}')
             print(outfile)
 
             for cube in sorted(cubes, key=lambda cube: cube.name()):
@@ -170,7 +170,7 @@ class Netcdf2Grib:
 
         # subset grib2 files
         def subset_grib2(indir=None):
-            files = glob.glob(f'{indir}/graphcastgfs.*')
+            files = glob.glob(f'{indir}/mlgfs.*')
             files.sort()
         
             outdir = os.path.join(indir, 'north_america')

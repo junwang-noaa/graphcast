@@ -81,7 +81,7 @@ class Netcdf2Grib:
             # Set output GRIB2 file.
             cycle = self.start_date.hour
             lead = int(time.dt.total_seconds()//3600)
-            outfile = os.path.join(outdir, f"graphcastgfs.t{cycle:02d}z.pgrb2.0p25.f{lead:03d}")
+            outfile = os.path.join(outdir, f"mlgfs.t{cycle:02d}z.pgrb2.0p25.f{lead:03d}")
 
             # Delete the old file.
             if os.path.isfile(outfile):
